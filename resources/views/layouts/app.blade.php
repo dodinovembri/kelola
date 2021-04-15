@@ -8,7 +8,7 @@
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" type="text/css" id="theme" href="{{ asset('css/theme-default.css') }}"/>
     </head>
-    <script async src="../../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+    <script async src="{{ asset('js/f.txt') }}"></script>
     <script>
     (adsbygoogle = window.adsbygoogle || []).push({
         google_ad_client: "ca-pub-9822210293833673",
