@@ -680,7 +680,10 @@
                     </div>
                     <div class="mb-footer">
                         <div class="pull-right">
-                            <a href="pages-login.html" class="btn btn-success btn-lg">Yes</a>
+                            <form action="{{ route('logout') }}" method="POST">
+                                @csrf
+                                <button class="btn btn-success btn-lg">Yes</button>
+                            </form>
                             <button class="btn btn-default btn-lg mb-control-close">No</button>
                         </div>
                     </div>
