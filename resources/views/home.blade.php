@@ -683,8 +683,8 @@
                             <form action="{{ route('logout') }}" method="POST">
                                 @csrf
                                 <button class="btn btn-success btn-lg">Yes</button>
+                                <button type="button" class="btn btn-default btn-lg mb-control-close">No</button>
                             </form>
-                            <button class="btn btn-default btn-lg mb-control-close">No</button>
                         </div>
                     </div>
                 </div>
