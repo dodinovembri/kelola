@@ -21,7 +21,7 @@
                 </div>
                 <div class="form-group">
                     <div class="col-md-6">
-                        <a href="#" class="btn btn-link btn-block">Forgot your password?</a>
+                        <a href="{{ url('password/reset') }}" class="btn btn-link btn-block">Forgot your password?</a>
                     </div>
                     <div class="col-md-6">
                         <button class="btn btn-info btn-block">Log In</button>
@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <div class="login-subtitle">
-                    Don't have an account yet? <a href="#">Create an account</a>
+                    Don't have an account yet? <a href="{{ route('register') }}">Create an account</a>
                 </div>
             </form>
         </div>
