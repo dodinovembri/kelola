@@ -36,7 +36,7 @@
                         <button class="btn btn-info btn-block btn-facebook"><span class="fa fa-facebook"></span> Facebook</button>
                     </div>
                     <div class="col-md-4">
-                        <button class="btn btn-info btn-block btn-google"><span class="fa fa-google-plus"></span> Google</button>
+                        <a href="{{ url('auth/google') }}"><button type="button" class="btn btn-info btn-block btn-google"><span class="fa fa-google-plus"></span> Google</button></a>
                     </div>
                 </div>
                 <div class="login-subtitle">
@@ -46,7 +46,7 @@
         </div>
         <div class="login-footer">
             <div class="pull-left">
-                &copy; 2014 AppName
+                &copy; 2021 KeuanganKu
             </div>
             <div class="pull-right">
                 <a href="#">About</a> |

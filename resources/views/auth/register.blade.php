@@ -41,7 +41,7 @@
         </div>
         <div class="login-footer">
             <div class="pull-left">
-                &copy; 2014 AppName
+                &copy; 2021 KeuanganKu
             </div>
             <div class="pull-right">
                 <a href="#">About</a> |
