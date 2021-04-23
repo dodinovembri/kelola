@@ -5,7 +5,8 @@ namespace App\Http\Controllers\Socialite;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-use Laravel\Socialite\Facades\Socialite;
+use Socialite;
+// use Laravel\Socialite\Facades\Socialite;
 
 class GoogleController extends Controller
 {
