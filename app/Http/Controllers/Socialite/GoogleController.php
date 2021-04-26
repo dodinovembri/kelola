@@ -5,8 +5,11 @@ namespace App\Http\Controllers\Socialite;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-use Socialite;
-// use Laravel\Socialite\Facades\Socialite;
+
+use Laravel\Socialite\Facades\Socialite;
+use Ramsey\Uuid\Uuid;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 
 class GoogleController extends Controller
 {
@@ -26,7 +29,7 @@ class GoogleController extends Controller
      * @return void
      */
     public function handleGoogleCallback()
-    {
+    {        
         try {
             $user = Socialite::driver('google')->user();
             $finduser = User::where('google_id', $user->id)->first();
@@ -35,12 +38,14 @@ class GoogleController extends Controller
                 return redirect()->intended('dashboard');
             }else{
                 $newUser = User::create([
+                    'id' => Uuid::uuid4(),
                     'name' => $user->name,
                     'email' => $user->email,
                     'google_id'=> $user->id,
-                    'password' => encrypt('123456dummy')
+                    'password' => encrypt('123456dummy'),
+                    'creator_id' => Auth::user()->id
                 ]);
-                Auth::login($newUser);
+                // Auth::login($newUser);
                 return redirect()->intended('dashboard');
             }
         } catch (Exception $e) {
