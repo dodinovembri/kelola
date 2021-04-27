@@ -41,11 +41,11 @@ class GoogleController extends Controller
                     'id' => Uuid::uuid4(),
                     'name' => $user->name,
                     'email' => $user->email,
-                    'google_id'=> $user->id,
-                    'password' => encrypt('123456dummy'),
-                    'creator_id' => Auth::user()->id
+                    'google_id'=> $user->id               
                 ]);
-                // Auth::login($newUser);
+                
+                $finduser = User::where('google_id', $user->id)->first();
+                Auth::login($finduser);
                 return redirect()->intended('dashboard');
             }
         } catch (Exception $e) {

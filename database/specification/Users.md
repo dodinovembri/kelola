@@ -10,8 +10,8 @@ CREATE TABLE users (
     `google_id` VARCHAR(255) NULL,
     `created_at` TIMESTAMP NULL,
     `updated_at` TIMESTAMP NULL,
-    `creator_id` VARCHAR(36) NOT NULL,
-    `updater_id` VARCHAR(36) NOT NULL,
+    `creator_id` VARCHAR(36) NULL,
+    `updater_id` VARCHAR(36) NULL,
 	PRIMARY KEY (`id`)
 );
 ```
