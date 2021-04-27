@@ -33,7 +33,8 @@ return [
     'google' => [
         'client_id' => '270334257344-snsnq9pcnmm34elbt8uvbulfskffhu9e.apps.googleusercontent.com',
         'client_secret' => 'n2QddA6mg5cQdOYSKogbW-IU',
-        'redirect' => 'http://localhost/projects/kelola/public/auth/google/callback',
+        'redirect' => 'https://kelola.dodinovembri.com/auth/google/callback',
+        // 'redirect' => 'http://localhost/projects/kelola/public/auth/google/callback',
     ],
 
 ];
