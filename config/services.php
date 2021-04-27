@@ -31,8 +31,10 @@ return [
     ],
 
     'google' => [
-        'client_id' => '270334257344-snsnq9pcnmm34elbt8uvbulfskffhu9e.apps.googleusercontent.com',
-        'client_secret' => 'n2QddA6mg5cQdOYSKogbW-IU',
+        // 'client_id' => '270334257344-snsnq9pcnmm34elbt8uvbulfskffhu9e.apps.googleusercontent.com',
+        'client_id' => '516696840418-0mus73h79ok56rs99fgvsh2u770nqeuh.apps.googleusercontent.com',
+        // 'client_secret' => 'n2QddA6mg5cQdOYSKogbW-IU',
+        'client_secret' => 'JK8q59Il10B_ZRtbAwofMtgB',
         'redirect' => 'https://kelola.dodinovembri.com/auth/google/callback',
         // 'redirect' => 'http://localhost/projects/kelola/public/auth/google/callback',
     ],
