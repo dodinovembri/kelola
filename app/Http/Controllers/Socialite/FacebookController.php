@@ -1,0 +1,47 @@
+<?php
+
+namespace App\Http\Controllers\Socialite;
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+use App\Models\User;
+use Validator;
+use Socialite;
+use Exception;
+use Auth;
+use Ramsey\Uuid\Uuid;
+
+class FacebookController extends Controller
+{
+    public function facebookRedirect()
+    {
+        return Socialite::driver('facebook')->redirect();
+    }
+
+    public function loginWithFacebook()
+    {
+        try {
+    
+            $user = Socialite::driver('facebook')->user();
+            $isUser = User::where('facebook_id', $user->id)->first();
+     
+            if($isUser){
+                Auth::login($isUser);
+                return redirect('/dashboard');
+            }else{
+                $createUser = User::create([
+                    'id' => Uuid::uuid4(),
+                    'name' => $user->name,
+                    'email' => $user->email,
+                    'facebook_id' => $user->id
+                ]);
+                $isUser = User::where('facebook_id', $user->id)->first();
+                Auth::login($isUser);
+                return redirect('/dashboard');
+            }
+    
+        } catch (Exception $exception) {
+            dd($exception->getMessage());
+        }
+    }
+}

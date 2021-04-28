@@ -33,7 +33,7 @@
                         <button class="btn btn-info btn-block btn-twitter"><span class="fa fa-twitter"></span> Twitter</button>
                     </div>
                     <div class="col-md-4">
-                        <button class="btn btn-info btn-block btn-facebook"><span class="fa fa-facebook"></span> Facebook</button>
+                        <a href="{{ url('auth/facebook') }}"><button type="button" class="btn btn-info btn-block btn-facebook"><span class="fa fa-facebook"></span> Facebook</button></a>
                     </div>
                     <div class="col-md-4">
                         <a href="{{ url('auth/google') }}"><button type="button" class="btn btn-info btn-block btn-google"><span class="fa fa-google-plus"></span> Google</button></a>

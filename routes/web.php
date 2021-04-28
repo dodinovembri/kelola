@@ -21,3 +21,6 @@ Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])-
 
 Route::get('auth/google', [App\Http\Controllers\Socialite\GoogleController::class, 'redirectToGoogle']);
 Route::get('auth/google/callback', [App\Http\Controllers\Socialite\GoogleController::class, 'handleGoogleCallback']);
+
+Route::get('auth/facebook', [App\Http\Controllers\Socialite\FacebookController::class, 'facebookRedirect']);
+Route::get('auth/facebook/callback', [App\Http\Controllers\Socialite\FacebookController::class, 'loginWithFacebook']);

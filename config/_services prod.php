@@ -29,17 +29,17 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
-    
+
     'google' => [
-        'client_id' => '270334257344-snsnq9pcnmm34elbt8uvbulfskffhu9e.apps.googleusercontent.com',
-        'client_secret' => 'n2QddA6mg5cQdOYSKogbW-IU',
-        'redirect' => 'http://localhost/projects/kelola/public/auth/google/callback',
+        'client_id' => '516696840418-0mus73h79ok56rs99fgvsh2u770nqeuh.apps.googleusercontent.com',
+        'client_secret' => 'JK8q59Il10B_ZRtbAwofMtgB',
+        'redirect' => 'https://kelola.dodinovembri.com/auth/google/callback',
     ],
 
     'facebook' => [
         'client_id' => '364352408333062',
         'client_secret' => 'c41911a2b4cec7ab1d2ccb4bddccad5b',
-        'redirect' => 'http://localhost/projects/kelola/public/auth/facebook/callback',
+        'redirect' => 'https://kelola.dodinovembri.com/auth/facebook/callback',
     ],
 
 ];

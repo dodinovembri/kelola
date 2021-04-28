@@ -8,6 +8,8 @@ CREATE TABLE users (
     `password` VARCHAR(255) NULL,
     `remember_token` VARCHAR(100) NULL,
     `google_id` VARCHAR(255) NULL,
+    `facebook_id` VARCHAR(255) NULL,
+    `twitter_id` VARCHAR(255) NULL,
     `created_at` TIMESTAMP NULL,
     `updated_at` TIMESTAMP NULL,
     `creator_id` VARCHAR(36) NULL,
