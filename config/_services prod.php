@@ -42,4 +42,10 @@ return [
         'redirect' => 'https://kelola.dodinovembri.com/auth/facebook/callback',
     ],
 
+    'twitter' => [
+        'client_id' => 'A7r4yJYBE6i8YhnMY5fgHx0sJ',
+        'client_secret' => '9FOEJK82ypzv1jZRypePDCqIeMPgXEIbHrKekBQMc1NmCE3PoA',
+        'redirect' => 'https://kelola.dodinovembri.com/auth/twitter/callback',
+    ],    
+
 ];

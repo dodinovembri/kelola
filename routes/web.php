@@ -24,3 +24,6 @@ Route::get('auth/google/callback', [App\Http\Controllers\Socialite\GoogleControl
 
 Route::get('auth/facebook', [App\Http\Controllers\Socialite\FacebookController::class, 'facebookRedirect']);
 Route::get('auth/facebook/callback', [App\Http\Controllers\Socialite\FacebookController::class, 'loginWithFacebook']);
+
+Route::get('auth/twitter', [App\Http\Controllers\Socialite\TwitterController::class, 'loginwithTwitter']);
+Route::get('auth/callback/twitter', [App\Http\Controllers\Socialite\TwitterController::class, 'cbTwitter']);

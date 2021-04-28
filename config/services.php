@@ -42,4 +42,10 @@ return [
         'redirect' => 'http://localhost/projects/kelola/public/auth/facebook/callback',
     ],
 
+    'twitter' => [
+        'client_id' => 'A7r4yJYBE6i8YhnMY5fgHx0sJ',
+        'client_secret' => '9FOEJK82ypzv1jZRypePDCqIeMPgXEIbHrKekBQMc1NmCE3PoA',
+        'redirect' => 'http://localhost/projects/kelola/public/auth/twitter/callback',
+    ],
+
 ];

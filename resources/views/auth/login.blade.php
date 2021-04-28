@@ -30,7 +30,7 @@
                 <div class="login-or">OR</div>
                 <div class="form-group">
                     <div class="col-md-4">
-                        <button class="btn btn-info btn-block btn-twitter"><span class="fa fa-twitter"></span> Twitter</button>
+                        <a href="{{ url('auth/twitter') }}"><button type="button" class="btn btn-info btn-block btn-twitter"><span class="fa fa-twitter"></span> Twitter</button></a>
                     </div>
                     <div class="col-md-4">
                         <a href="{{ url('auth/facebook') }}"><button type="button" class="btn btn-info btn-block btn-facebook"><span class="fa fa-facebook"></span> Facebook</button></a>
