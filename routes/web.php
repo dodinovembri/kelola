@@ -26,4 +26,4 @@ Route::get('auth/facebook', [App\Http\Controllers\Socialite\FacebookController::
 Route::get('auth/facebook/callback', [App\Http\Controllers\Socialite\FacebookController::class, 'loginWithFacebook']);
 
 Route::get('auth/twitter', [App\Http\Controllers\Socialite\TwitterController::class, 'loginwithTwitter']);
-Route::get('auth/callback/twitter', [App\Http\Controllers\Socialite\TwitterController::class, 'cbTwitter']);
+Route::get('auth/twitter/callback', [App\Http\Controllers\Socialite\TwitterController::class, 'cbTwitter']);

@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Socialite;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
-
+use Ramsey\Uuid\Uuid;
 use Auth;
 use Exception;
 use Socialite;
@@ -20,7 +20,6 @@ class TwitterController extends Controller
 
     public function cbTwitter()
     {
-        return 1;
         try {
             $user = Socialite::driver('twitter')->user();
             $userWhere = User::where('twitter_id', $user->id)->first();
