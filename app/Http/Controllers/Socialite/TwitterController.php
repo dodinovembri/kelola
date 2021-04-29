@@ -31,7 +31,8 @@ class TwitterController extends Controller
                     'id' => Uuid::uuid4(),
                     'name' => $user->name,
                     'email' => $user->email,
-                    'twitter_id'=> $user->id
+                    'twitter_id'=> $user->id,
+                    'is_socialite'=> 1
                 ]);
                 $userWhere = User::where('twitter_id', $user->id)->first();
                 Auth::login($userWhere);

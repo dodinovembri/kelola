@@ -33,7 +33,8 @@ class FacebookController extends Controller
                     'id' => Uuid::uuid4(),
                     'name' => $user->name,
                     'email' => $user->email,
-                    'facebook_id' => $user->id
+                    'facebook_id' => $user->id,
+                    'is_socialite'=> 1
                 ]);
                 $isUser = User::where('facebook_id', $user->id)->first();
                 Auth::login($isUser);

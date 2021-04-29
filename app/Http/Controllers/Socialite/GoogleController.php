@@ -41,7 +41,8 @@ class GoogleController extends Controller
                     'id' => Uuid::uuid4(),
                     'name' => $user->name,
                     'email' => $user->email,
-                    'google_id'=> $user->id               
+                    'google_id'=> $user->id,
+                    'is_socialite'=> 1               
                 ]);
                 
                 $finduser = User::where('google_id', $user->id)->first();

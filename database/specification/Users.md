@@ -10,6 +10,7 @@ CREATE TABLE users (
     `google_id` VARCHAR(255) NULL,
     `facebook_id` VARCHAR(255) NULL,
     `twitter_id` VARCHAR(255) NULL,
+    `is_socialite` TINYINT NULL,
     `created_at` TIMESTAMP NULL,
     `updated_at` TIMESTAMP NULL,
     `creator_id` VARCHAR(36) NULL,
